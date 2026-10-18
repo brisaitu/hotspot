@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#b8ab97">
+    <meta name="description" content="Explore o pomar, os animais e a horta do Hotel Fazenda Brisa Itu.">
+    <title>Natureza em destaque | Hotel Fazenda Brisa Itu</title>
+    <link rel="icon" href="assets/brisa-itu-logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-row">
+        <a class="brand-link" href="../natureza" aria-label="Página inicial do Hotel Fazenda Brisa Itu">
+          <img class="brand-logo" src="assets/brisa-itu-logo.png" alt="Hotel Fazenda Brisa Itu">
+        </a>
+      </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Temas do catálogo">
+      <a href="../natureza" aria-current="page">Início</a>
+      <a href="pomar">Pomar</a>
+      <a href="animais">Animais</a>
+      <a href="horta">Horta</a>
+    </nav>
+
+    <main id="conteudo" class="catalog-shell">
+      <section class="catalog-intro">
+        <p class="eyebrow">Natureza em destaque</p>
+        <h1>Descubra o Brisa Itu</h1>
+        <p>Explore os temas e abra a página individual de cada planta ou animal. Cada item possui um endereço próprio, preparado para acesso direto por QR Code.</p>
+      </section>
+
+      <section id="pomar" class="theme-section" aria-labelledby="titulo-pomar">
+        <div class="section-head">
+          <div>
+            <h2 id="titulo-pomar">Pomar</h2>
+            <p>Frutas e árvores cultivadas nos espaços verdes do hotel-fazenda.</p>
+          </div>
+          <a class="section-link" href="pomar">Ver todo o pomar</a>
+        </div>
+        <div class="theme-grid">
+          <article class="catalog-card">
+            <img src="assets/abacate.webp" alt="Abacate manteiga inteiro e cortado em um pomar" width="1200" height="900">
+            <div class="catalog-card-content">
+              <p class="card-category">Pomar</p>
+              <h2>Abacate manteiga</h2>
+              <p>Fruto de polpa cremosa, cultivado em regiões de clima tropical e subtropical.</p>
+              <a class="primary-action" href="pomar/abacate-manteiga">Conhecer o abacate</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="animais" class="theme-section" aria-labelledby="titulo-animais">
+        <div class="section-head">
+          <div>
+            <h2 id="titulo-animais">Animais</h2>
+            <p>Conheça os animais presentes na experiência rural do Brisa Itu.</p>
+          </div>
+          <a class="section-link" href="animais">Ver todos os animais</a>
+        </div>
+        <div class="theme-grid">
+          <article class="catalog-card">
+            <img src="assets/boi.webp" alt="Boi em uma pastagem no campo" width="1200" height="900">
+            <div class="catalog-card-content">
+              <p class="card-category">Animais</p>
+              <h2>Boi</h2>
+              <p>Mamífero ruminante que acompanha comunidades humanas há milhares de anos.</p>
+              <a class="primary-action" href="animais/boi">Conhecer o boi</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="horta" class="theme-section" aria-labelledby="titulo-horta">
+        <div class="section-head">
+          <div>
+            <h2 id="titulo-horta">Horta</h2>
+            <p>Ervas, temperos e outros cultivos que perfumam e enriquecem a paisagem.</p>
+          </div>
+          <a class="section-link" href="horta">Ver toda a horta</a>
+        </div>
+        <div class="theme-grid">
+          <article class="catalog-card">
+            <img src="assets/alecrim.webp" alt="Ramos de alecrim floridos em uma horta" width="1200" height="900">
+            <div class="catalog-card-content">
+              <p class="card-category">Horta</p>
+              <h2>Alecrim</h2>
+              <p>Erva aromática perene, de folhas finas e aroma marcante.</p>
+              <a class="primary-action" href="horta/alecrim">Conhecer o alecrim</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">Hotel Fazenda Brisa Itu · <span data-current-year></span></footer>
+  </body>
+</html>
