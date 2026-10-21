@@ -297,9 +297,15 @@ h1,
 }
 
 h1 {
-  font-size: clamp(3.2rem, 6vw, 5.8rem);
+  font-size: clamp(2.6rem, 4.5vw, 4.4rem);
   letter-spacing: -0.045em;
   text-transform: uppercase;
+}
+
+.copy-panel h1 {
+  font-size: clamp(2rem, 4.2vw, 4.2rem);
+  overflow-wrap: normal;
+  hyphens: none;
 }
 
 .scientific-name {
@@ -517,22 +523,21 @@ h1 {
 
 .catalog-card {
   display: flex;
-  min-height: 29rem;
+  min-height: 0;
   flex-direction: column;
   background: var(--brisa-cream);
 }
 
 .catalog-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: clamp(10rem, 16vw, 14rem);
   object-fit: cover;
 }
 
 .catalog-card-content {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  padding: 1.35rem;
+  padding: 1rem 1.1rem 1.1rem;
 }
 
 .catalog-card .card-category {
@@ -545,21 +550,38 @@ h1 {
 }
 
 .catalog-card h2 {
-  font-size: clamp(2rem, 3.7vw, 3.1rem);
+  font-size: clamp(1.55rem, 2.3vw, 2.15rem);
 }
 
 .catalog-card p {
-  margin: 0.8rem 0 1.2rem;
+  margin: 0.5rem 0 0.85rem;
 }
 
 .catalog-card .primary-action {
   flex: 0 0 auto;
-  margin-top: auto;
+  min-height: 2.7rem;
+  margin-top: 0.25rem;
+  padding: 0.6rem 0.9rem;
+}
+
+@media (min-width: 901px) {
+  .theme-grid,
+  .catalog-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  }
 }
 
 @media (max-width: 900px) {
   .hero-layout {
     grid-template-columns: 1fr;
+  }
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .copy-panel h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
   }
 
   .media-panel,
@@ -579,6 +601,7 @@ h1 {
 
   .catalog-card img {
     height: 100%;
+    min-height: 12rem;
     aspect-ratio: auto;
   }
 }
@@ -643,6 +666,10 @@ h1 {
     overflow-wrap: normal;
   }
 
+  .copy-panel h1 {
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+  }
+
   .summary {
     font-size: 1.12rem;
     line-height: 1.72;
@@ -703,8 +730,9 @@ h1 {
   }
 
   .catalog-card img {
-    height: auto;
-    aspect-ratio: 4 / 3;
+    height: 11rem;
+    min-height: 0;
+    aspect-ratio: auto;
   }
 }
 
